@@ -2,21 +2,29 @@
 #include<iomanip>
 using namespace std;
 
-const double pi = 3.1222;
-int myGlobal;
+int count_str(string s) {
+    int i = 0, ans = 0;
+
+    while (s[i] != '\0') {
+        if(s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u') {
+            ans++;
+        }
+        i++;
+    }
+    return ans;
+}
 
 int main() {
-    string firstName = "Gagan";
-    string lastName = "Singla";
-    std::cout << "Hello, World!" << std::endl;
-    cout<<"Test"<<endl;
-    cout<<setprecision(2)<<pi<<endl;
-    cout<<fixed;
-    cout<<setprecision(10)<<pi<<endl;
-    cout<<firstName.length()<<endl;
+    int str;
+    cin >> str;
 
-    const int a = 10;
+    cout << count_str(str)<< endl;
 
-    a = a + 1
+
+
+
+
     return 0;
+
+
 }
