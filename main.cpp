@@ -1,30 +1,13 @@
 #include <iostream>
-#include<iomanip>
-using namespace std;
-
-int count_str(string s) {
-    int i = 0, ans = 0;
-
-    while (s[i] != '\0') {
-        if(s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u') {
-            ans++;
-        }
-        i++;
-    }
-    return ans;
-}
 
 int main() {
-    int str;
-    cin >> str;
 
-    cout << count_str(str)<< endl;
+    int fav_number;
 
+    std::cout<<"Enter your favourite number between 1 and 100";
 
+    std::cin>> fav_number;
 
-
-
+    std::cout<< "amazing favourite number is "<<fav_number;
     return 0;
-
-
 }
