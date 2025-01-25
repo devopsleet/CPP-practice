@@ -1,13 +1,20 @@
+#include <iomanip>
 #include <iostream>
 
+using namespace std;
+
+int globalNum;
+
 int main() {
-
-    int fav_number;
-
-    std::cout<<"Enter your favourite number between 1 and 100";
-
-    std::cin>> fav_number;
-
-    std::cout<< "amazing favourite number is "<<fav_number;
+    const double pi = 3.141592653589793;
+    int myNum;
+    float myFloatNum;
+    cout<<myNum<<endl;
+    cout<<myFloatNum<<endl;
+    string text = "Hello";
+    cout<<text<<endl;
+    cout<<globalNum<<endl;
+    cout<< "without fixed " <<setprecision(2)<<pi<<endl;
+    cout<< "with fixed " <<fixed <<setprecision(3)<<pi<<endl;
     return 0;
 }
