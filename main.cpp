@@ -1,20 +1,19 @@
 #include <iomanip>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int globalNum;
 
 int main() {
-    const double pi = 3.141592653589793;
+    char name[50];
+   cout << "Enter you name"<<endl;
+    cin>> name;
+    cout << name<<endl;
+    cout<<globalNum;
     int myNum;
-    float myFloatNum;
-    cout<<myNum<<endl;
-    cout<<myFloatNum<<endl;
-    string text = "Hello";
-    cout<<text<<endl;
-    cout<<globalNum<<endl;
-    cout<< "without fixed " <<setprecision(2)<<pi<<endl;
-    cout<< "with fixed " <<fixed <<setprecision(3)<<pi<<endl;
+
+    cout<< myNum;
     return 0;
 }
