@@ -4,16 +4,21 @@
 
 using namespace std;
 
-int globalNum;
+int count_vowels(string s) {
+    int ans = 0;
+    for (size_t i = 0; i < s.length(); i++) {
+        if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u') {
+            ans++;
+        }
+    }
+    return ans;
+}
 
 int main() {
-    char name[50];
-   cout << "Enter you name"<<endl;
-    cin>> name;
-    cout << name<<endl;
-    cout<<globalNum;
-    int myNum;
+    string str;
+    cin >> str;
+    cout << "The total number of vowels are " << count_vowels(str) << endl;
 
-    cout<< myNum;
+
     return 0;
 }
