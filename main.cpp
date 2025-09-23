@@ -7,10 +7,15 @@ int myGlobalNum;
 
 int main() {
 
-    const int a = 10;
-    const int b = a + 1;
-    b = a + 1;
-    ab = 3;
+    int n;
+    cin>>n;
+    if (n==0) {
+        cout<<"if executes"<<endl;
+    }
+    else {
+        cout<<"I dont think If executes";
+    }
+
     return 0;
 }
 
