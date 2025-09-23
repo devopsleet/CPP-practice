@@ -1,26 +1,15 @@
-#include<iostream>
-
+#include <iostream>
+#include <iomanip>
 using namespace std;
 
-template <class T>
-class Calculator {
-private:
-    T s1, s2;
-
-public:
-    Calculator(T s1, T s2) {
-        this->s1 = s1;
-        this->s2 = s2;
-    }
-
-    T concatenate() {
-        return s1 + s2;
-    }
-};
+int myGlobalNum;
 
 int main() {
-    Calculator<string> calculator("Hi", "Hello");
-    cout<<calculator.concatenate()<<endl;
 
+    int myNum;
+    string myText = "Hello";
+    cout<<myText<<endl;
+    cout<<myNum;
     return 0;
 }
+
