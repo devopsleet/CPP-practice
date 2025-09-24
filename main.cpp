@@ -7,13 +7,18 @@ int myGlobalNum;
 
 int main() {
 
-    int n;
-    cin>>n;
-    if (n==0) {
-        cout<<"if executes"<<endl;
-    }
-    else {
-        cout<<"I dont think If executes";
+    char input;
+    cin>>input;
+
+    switch (input) {
+        case 'a':
+            cout<<"I am a"<<endl;
+            break;
+        case 'b':
+            cout<<"I am b"<<endl;
+        default:
+            cout<<"I have no name"<<endl;
+
     }
 
     return 0;
