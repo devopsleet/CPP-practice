@@ -16,6 +16,7 @@ int main() {
     }
 
     cout<<result<<endl;
+    cout<<EOF<<endl;
 
     return 0;
 }
