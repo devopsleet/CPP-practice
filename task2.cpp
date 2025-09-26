@@ -4,19 +4,22 @@ using namespace std;
 
 int main() {
 
-    int n;
+    // cout<<"Helo World"<<endl;
+    // cout<<"Hello" << " World!\n";
+    // cout<<"Hello\nWorld";
 
-    cin>>n;
+    int num1;
+    int num2;
 
-    int result = 0, temp=n;
+    cout<<"Enter an Integer:  ";
+    cin>>num1;
+    cout<<num1;
 
-    while (temp!=0) {
-        result = result + temp%10;
-        temp = temp/10;
-    }
 
-    cout<<result<<endl;
-    cout<<EOF<<endl;
+    double num3;
+
+
+
 
     return 0;
 }
