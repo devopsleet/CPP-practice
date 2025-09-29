@@ -1,21 +1,13 @@
 #include <iostream>
+#include <climits>
+
 using namespace std;
 
 int main() {
 
-    // Character type
-    char middle_initial {'j'};
-
-    //cout<<"Middle Initial"<<middle_initial;
-
-    unsigned short int exam_score {55};
-
-    long long people_on_earth {7'600'000'000};
-
-    cout<<sizeof(short);
-
-    bool game_over {false};
-    cout<<"Game over"<<game_over;
+    cout<<"Size of short is "<<sizeof(short);
+    cout<<"Size of int is "<<sizeof(int);
+    cout<<"Size of long is "<<sizeof(long);
 
     return 0;
 }
