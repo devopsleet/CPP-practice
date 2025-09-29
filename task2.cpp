@@ -2,14 +2,16 @@
 
 using namespace std;
 
+int age {12};
+
 int main() {
 
-    int m {}, d{}, y {};
+    int room_width;
+    int age {13};
 
-    cout<<"Enter your date of birth using spaces=   ";
-    cin>>m>>d>>y;
+    cout<<"Enter the width of the room";
+    cin>>room_width;
 
-    cout<<"Your DOB is "<<m<<" "<<d<<" "<<y;
-
+    cout<<age;
     return 0;
 }
