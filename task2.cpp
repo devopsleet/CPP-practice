@@ -1,17 +1,21 @@
 #include <iostream>
-
 using namespace std;
-
-int age {12};
 
 int main() {
 
-    int room_width;
-    int age {13};
+    // Character type
+    char middle_initial {'j'};
 
-    cout<<"Enter the width of the room";
-    cin>>room_width;
+    //cout<<"Middle Initial"<<middle_initial;
 
-    cout<<age;
+    unsigned short int exam_score {55};
+
+    long long people_on_earth {7'600'000'000};
+
+    cout<<sizeof(short);
+
+    bool game_over {false};
+    cout<<"Game over"<<game_over;
+
     return 0;
 }
