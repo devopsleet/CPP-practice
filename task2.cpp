@@ -3,11 +3,12 @@
 
 using namespace std;
 
-int main() {
 
-    cout<<"Size of short is "<<sizeof(short);
-    cout<<"Size of int is "<<sizeof(int);
-    cout<<"Size of long is "<<sizeof(long);
+
+int main() {
+    constexpr double price_per_room {30.25};
+
+    cout<<"Price per room is"<<price_per_room;
 
     return 0;
 }
