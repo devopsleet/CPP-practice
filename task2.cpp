@@ -1,22 +1,19 @@
 #include <iostream>
 #include <climits>
-
+#include <vector>
 using namespace std;
-
-
 
 int main() {
 
-    const int rows {3};
-    const int cols {4};
+    const vector <int> vowels (5, 2);
 
-    int movies_ratings [rows][cols] {
-        {1,2,3,4},
-        {1,23,4,5},
-        {1,2,3,4}
-    };
+    cout<<vowels[0]<<endl;
+    cout<<vowels[1]<<endl;
+    cout<<vowels.at(2)<<endl;
+    // cout<<vowels.at(6);
 
-    cout<<movies_ratings[0][5];
+
+
 
     return 0;
 }
