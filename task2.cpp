@@ -7,21 +7,16 @@ using namespace std;
 
 int main() {
 
-    char vowels [] {'a', 'e', 'i', 'o', 'u'};
+    const int rows {3};
+    const int cols {4};
 
-    cout<<"My first vowel is "<<vowels[0]<<endl;
-    cout<<"My last vowel is "<<vowels[4]<<endl;
+    int movies_ratings [rows][cols] {
+        {1,2,3,4},
+        {1,23,4,5},
+        {1,2,3,4}
+    };
 
-    // cin>>vowels[5]; // out of bounds
-    // cout<<vowels[5]; // out of bounds
-
-    int test_scores [5] {10,23,45};
-
-    cout<<test_scores[0]<<endl;
-    cout<<test_scores[1]<<endl;
-    cout<<test_scores[2]<<endl;
-    cout<<test_scores[3]<<endl;
-    cout<<test_scores[4];
+    cout<<movies_ratings[0][5];
 
     return 0;
 }
