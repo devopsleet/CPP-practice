@@ -5,12 +5,14 @@ using namespace std;
 
 int main() {
 
-    const vector <int> vowels (5, 2);
+    int num1 {10};
+    int num2 {20};
 
-    cout<<vowels[0]<<endl;
-    cout<<vowels[1]<<endl;
-    cout<<vowels.at(2)<<endl;
-    // cout<<vowels.at(6);
+    num1 = 100;
+    num2 = 200;
+
+    cout<<"num1"<<num1<<endl;
+
 
 
 
