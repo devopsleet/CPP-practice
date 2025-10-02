@@ -1,25 +1,26 @@
 #include <iostream>
 #include <climits>
+#include <iomanip>
 #include <vector>
 using namespace std;
 
 int main() {
 
-    int num1 {10};
-    int num2 {20};
+    char letter_grade {};
 
-    int res = num1 + num2;
+    cout<<"Enter the letter grade you expect on the exam";
+    cin>>letter_grade;
 
-    cout<<res<<endl;
+    switch (letter_grade) {
+        case 'a':
+        case 'A':
+            cout<<" My letter is"<<letter_grade<<endl;
+            break;
+        default:
+            cout<<"No grade"<<endl;
+            break;
 
-
-
-
-
-
-
-
-
+    }
 
 
     return 0;
