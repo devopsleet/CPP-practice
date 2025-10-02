@@ -8,7 +8,7 @@ int main() {
 
     int scores [] {10,20,30};
 
-    for (int score: scores)
+    for (const auto score: scores)
         cout<<score<<endl;
 
     return 0;
