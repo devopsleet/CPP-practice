@@ -5,11 +5,14 @@
 using namespace std;
 
 int main() {
+    vector<double> temp{45.6, 4354.7, 3434.8, 54656.9};
 
-    int scores [] {10,20,30};
+    double avg_temp{}, total{};
 
-    for (const auto score: scores)
-        cout<<score<<endl;
+    for (auto t: temp)
+        total += t;
+    cout<<fixed<<setprecision(2);
+    cout << ((temp.size()) ? to_string(total / temp.size()) : "temp size is zero") << endl;
 
     return 0;
 }
