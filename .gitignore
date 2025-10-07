@@ -25,7 +25,7 @@ CTestTestfile.cmake
 *.a
 *.lib
 
-
+/cmake-build-debug/.cmake/api/*
 /cmake-build-debug/.ninja_deps
 /cmake-build-debug/.ninja_log
 /cmake-build-debug/CMakeFiles/4.0.2/CompilerIdC/a.exe
