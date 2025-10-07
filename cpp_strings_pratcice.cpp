@@ -4,18 +4,17 @@
 
 #include <iostream>
 #include <string>
+#define NL "\n"
 
 using namespace std;
 
 int main() {
-    const string s1 {"frank"};
 
-    for (const int c: s1) {
-        cout<<c<<endl;
-    }
+    string s1 (3, 'A');
+    cout<<s1<<NL;
 
-    cout<<s1.length()<<endl;
-    cout<<s1.at(5);
+    string s2 {"Apple"};
+    cout<<s2<<endl;
 
     return 0;
 }
