@@ -10,11 +10,20 @@ using namespace std;
 
 int main() {
 
-    string s1 (3, 'A');
-    cout<<s1<<NL;
+    char s[] {'h', 'e'};
 
-    string s2 {"Apple"};
-    cout<<s2<<endl;
+    cout<<s<<endl;
+    cout<<sizeof(s)<<endl;
+
+    char s_new[] {"hello"};
+
+    cout<<s_new<<endl;
+    cout<<sizeof(s_new)<<endl;
+
+    int arr[] {1,2,3};
+
+    cout<<arr<<endl;
+    cout<<sizeof(arr)<<endl;
 
     return 0;
 }
