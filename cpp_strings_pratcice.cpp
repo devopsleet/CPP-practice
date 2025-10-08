@@ -10,19 +10,10 @@ using namespace std;
 
 int main() {
 
-    char s[] = "hello";
+    string s1;
+    getline(cin, s1);
 
-    s[0] = 'H';
-
-    cout<<s<<endl;
-
-    const char* ptr = "hello";
-
-    ptr[0] = 'H';
-
-    cout<<ptr<<endl;
-
-
+    cout<<s1;
 
     return 0;
 }
