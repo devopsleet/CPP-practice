@@ -10,20 +10,19 @@ using namespace std;
 
 int main() {
 
-    char s[] {'h', 'e'};
+    char s[] = "hello";
+
+    s[0] = 'H';
 
     cout<<s<<endl;
-    cout<<sizeof(s)<<endl;
 
-    char s_new[] {"hello"};
+    const char* ptr = "hello";
 
-    cout<<s_new<<endl;
-    cout<<sizeof(s_new)<<endl;
+    ptr[0] = 'H';
 
-    int arr[] {1,2,3};
+    cout<<ptr<<endl;
 
-    cout<<arr<<endl;
-    cout<<sizeof(arr)<<endl;
+
 
     return 0;
 }
