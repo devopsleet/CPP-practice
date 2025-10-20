@@ -1,29 +1,25 @@
-//
-// Created by gasin on 10/10/2025.
-//
-
 #include <iostream>
-#include <cmath>
-#include <cstdlib> // required for rand()
-#include <ctime>
+#include <string>
+#include <vector>
 
 using namespace std;
+//Function prototypes
+void pass_by_value1(int num);
+void pass_by_value2(string s);
+void pass_by_value(vector<string> v);
+void print_vector(vector<string> v);
+
+
+void pass_by_value1(int num) {
+    num = 1000;
+}
+
 
 int main() {
 
-    int random_number {};
-    size_t count {10};
-    int min {1};
-    int max {6};
+    int num {10};
 
-    cout<<"The max value of Random max on my system is "<<RAND_MAX<<endl;
-    srand(time(nullptr));
-
-    for (size_t i {1}; i <= count; ++i) {
-        random_number = rand() % max + min;
-        cout<<random_number<<endl;
-    }
-
-    return 0;
-
+    cout<<"The value of num before calling pass_by_value1 is "<< num<<endl;
+    pass_by_value1(num);
+    cout<<"The value of num after calling pass_by_value1 is " <<num<<endl;
 }
