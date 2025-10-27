@@ -8,9 +8,9 @@
 
 using namespace std;
 
-void pass_by_ref(vector<string> &v);
+void pass_by_ref(const vector<string> &v);
 
-void pass_by_ref(vector<string> &v) {
+void pass_by_ref(const vector<string> &v) {
     for (auto name:v)
         cout<<name<<" ";
     cout<<endl;
