@@ -1,9 +1,23 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
-    std::cout << "Enter two numbers: " << std::endl;
-    int v1 = 0, v2 = 0;
-    std::cin >> v1 >> v2;
-    std::cout << "The Sum odf two numbers is " << v1 + v2 << std::endl;
+
+    // bool b = 42;
+    // cout<<boolalpha<<b;
+    // cout<<endl;
+    // int i = 3.14;
+    // cout<<i<<endl;
+    signed char c = 259;
+    cout<<int(c)<<endl;
+    char d = 3;
+    cout<<d;
+
+    int i = 2 + true + true;
+    cout<<i;
+    cout<<endl;
+    cout<<sizeof(int) * 8;
+
     return 0;
 }
