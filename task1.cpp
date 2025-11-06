@@ -1,23 +1,13 @@
 #include <iostream>
+#include <typeinfo>
+#include<climits>
 
 using namespace std;
 
 int main() {
+    cout<<"Signed int min "<<INT_MIN<<endl;
+    cout<<"Signed int max "<<INT_MAX<<endl;
 
-    // bool b = 42;
-    // cout<<boolalpha<<b;
-    // cout<<endl;
-    // int i = 3.14;
-    // cout<<i<<endl;
-    signed char c = 259;
-    cout<<int(c)<<endl;
-    char d = 3;
-    cout<<d;
-
-    int i = 2 + true + true;
-    cout<<i;
-    cout<<endl;
-    cout<<sizeof(int) * 8;
 
     return 0;
 }
