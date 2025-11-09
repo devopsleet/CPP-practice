@@ -9,30 +9,53 @@
 using namespace std;
 
 int main() {
-    int score{100};
+    const int *int_ptr{nullptr};
 
-    int *score_ptr{&score};
+    int_ptr = new int;
 
-    cout << *score_ptr << endl;
+    cout << int_ptr << endl;
 
-    *score_ptr = 200;
+    delete int_ptr;
 
-    cout << score << endl;
+    size_t size{0};
+    const double *temp_ptr{nullptr};
+
+    cout << "How many temps ?";
+    cin >> size;
+
+    temp_ptr = new double[size];
+
+    cout << temp_ptr << endl;
+
+    delete [] temp_ptr;
+    temp_ptr = nullptr;
 
 
-    vector<string> stooges {"Larry", "Moe", "Curly"};
+    //int score{100};
 
-    vector<string> *vector_ptr {nullptr};
+    // int *score_ptr{&score};
+    //
+    // cout << *score_ptr << endl;
+    //
+    // *score_ptr = 200;
+    //
+    // cout << score << endl;
+    //
+    //
+    // vector<string> stooges {"Larry", "Moe", "Curly"};
+    //
+    // vector<string> *vector_ptr {nullptr};
+    //
+    // cout<<stooges.at(0)<<endl;
+    //
+    // vector_ptr = &stooges;
+    //
+    // cout<<"vector elemet at 0 index "<<(*vector_ptr).at(0)<<endl;
+    //
+    // for (const auto &stooge : *vector_ptr) {
+    //     cout<<stooge<<endl;
+    // }
 
-    cout<<stooges.at(0)<<endl;
-
-    vector_ptr = &stooges;
-
-    cout<<"vector elemet at 0 index "<<(*vector_ptr).at(0)<<endl;
-
-    for (const auto &stooge : *vector_ptr) {
-        cout<<stooge<<endl;
-    }
 
     return 0;
 }
