@@ -9,28 +9,30 @@
 using namespace std;
 
 int main() {
-    int num{10};
+    int score{100};
 
-    cout << "Value of num is " << num << endl;
-    cout << "size of num is " << sizeof num << endl;
-    cout << "Address of num is " << &num << endl;
+    int *score_ptr{&score};
 
-    int *p;
-    cout << "\n" << "Value of p is " << p << endl;
-    cout << "size of p is " << sizeof p << endl;
-    cout << "Address of p is " << &p << endl;
+    cout << *score_ptr << endl;
 
-    p = nullptr;
+    *score_ptr = 200;
 
-    cout << "\n" << "Value of p is " << p << endl;
+    cout << score << endl;
 
-    int *ptr1{nullptr};
-    double *ptr2{nullptr};
-    unsigned long long *ptr3{nullptr};
-    vector<string> *ptr4{nullptr};
 
-    cout << "size of ptr1 " << sizeof ptr1 << endl;
-    cout << "size of ptr4 " << sizeof ptr4 << endl;
+    vector<string> stooges {"Larry", "Moe", "Curly"};
+
+    vector<string> *vector_ptr {nullptr};
+
+    cout<<stooges.at(0)<<endl;
+
+    vector_ptr = &stooges;
+
+    cout<<"vector elemet at 0 index "<<(*vector_ptr).at(0)<<endl;
+
+    for (const auto &stooge : *vector_ptr) {
+        cout<<stooge<<endl;
+    }
 
     return 0;
 }
