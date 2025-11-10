@@ -6,14 +6,26 @@
 
 using namespace std;
 
+
+// compound statement
+void double_data(int *int_ptr) {
+    *int_ptr *= 2;
+}
+
 int main() {
-    int high_score{100};
-    int low_score{60};
+    int value{10};
+    int *int_ptr{nullptr};
 
-    const int *ptr{&high_score};
+    cout << "Value before pointer " << value << endl;
+    double_data(&value);
+    cout << "Value after pointer " << value << endl;
 
-    // pointer to constant
-    *ptr = 86;
+    cout << "----------------------------------------" << endl;
+    int_ptr = &value;
+
+    double_data(int_ptr);
+    cout << "Value after pointer " << value << endl;
+
 
     return 0;
 }
