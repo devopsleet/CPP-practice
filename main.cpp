@@ -3,24 +3,19 @@
 #include <string>
 using namespace std;
 
-int myGlobalNum;
+int reused = 42;
 
 int main() {
+    int unique{0}; // block scope
 
-    char input;
-    cin>>input;
+    cout << reused << " " << unique << endl;
 
-    switch (input) {
-        case 'a':
-            cout<<"I am a"<<endl;
-            break;
-        case 'b':
-            cout<<"I am b"<<endl;
-        default:
-            cout<<"I have no name"<<endl;
+    int reused = 0;
 
-    }
+    cout << reused << " " << unique << endl;
+
+    cout << ::reused << " " << unique << endl;
+
 
     return 0;
 }
-
