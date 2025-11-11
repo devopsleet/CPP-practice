@@ -6,16 +6,14 @@ using namespace std;
 int reused = 42;
 
 int main() {
-    int unique{0}; // block scope
 
-    cout << reused << " " << unique << endl;
+    int iVal {10};
 
-    int reused = 0;
+    int &refVal = iVal;
 
-    cout << reused << " " << unique << endl;
+    int refVal2 {refVal};
 
-    cout << ::reused << " " << unique << endl;
-
+    cout<<refVal2;
 
     return 0;
 }
