@@ -3,17 +3,35 @@
 #include <string>
 using namespace std;
 
-int reused = 42;
+// void double_data(int *int_ptr) {
+//     *int_ptr *= 2;
+// }
+
+
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
 
 int main() {
+    int x{100}, y{200};
 
-    int iVal {10};
+    cout << "Values before swapping ";
+    cout << x << " " << y << endl;
 
-    int &refVal = iVal;
+    swap(&x, &y);
 
-    int refVal2 {refVal};
+    cout << "Values after swap ";
+    cout << x << " " << y << endl;
+    // int value{10};
+    //
+    // int *int_ptr{nullptr};
+    //
+    // cout << "Value" << value << endl;
+    // double_data(&value);
+    // cout << "Value: " << value << endl;
 
-    cout<<refVal2;
 
     return 0;
 }

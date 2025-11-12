@@ -9,26 +9,40 @@
 using namespace std;
 
 int main() {
-    const int *int_ptr{nullptr};
+    int a = 10;
+    int b = 20;
 
-    int_ptr = new int;
+    int &ref = a;
 
-    cout << int_ptr << endl;
+    cout << a << endl;
+    cout << ref << endl;
 
-    delete int_ptr;
+    ref = b;
 
-    size_t size{0};
-    const double *temp_ptr{nullptr};
+    cout << a << endl;
+    cout << ref << endl;
+    cout << b << endl;
 
-    cout << "How many temps ?";
-    cin >> size;
-
-    temp_ptr = new double[size];
-
-    cout << temp_ptr << endl;
-
-    delete [] temp_ptr;
-    temp_ptr = nullptr;
+    // const int *int_ptr{nullptr};
+    //
+    // int_ptr = new int;
+    //
+    // cout << int_ptr << endl;
+    //
+    // delete int_ptr;
+    //
+    // size_t size{0};
+    // const double *temp_ptr{nullptr};
+    //
+    // cout << "How many temps ?";
+    // cin >> size;
+    //
+    // temp_ptr = new double[size];
+    //
+    // cout << temp_ptr << endl;
+    //
+    // delete [] temp_ptr;
+    // temp_ptr = nullptr;
 
 
     //int score{100};
