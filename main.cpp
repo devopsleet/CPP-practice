@@ -17,7 +17,7 @@ using namespace std;
 // }
 
 void display(const vector<string> *v) {
-    (*v).at(0) = "Funny";
+    //(*v).at(0) = "Funny";
     for (const auto &stooge: *v) {
         cout << stooge << " ";
     }

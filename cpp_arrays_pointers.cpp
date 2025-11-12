@@ -6,24 +6,16 @@
 
 using namespace std;
 
+void display(const int *const arr, const int s) {
+    while (*arr != s) {
+        cout << *arr++ << " ";
+    }
+}
+
 int main() {
+    int scores[]{100, 99, 98, 97, 96, -1};
 
-    size_t size{0};
-
-    cout<<"Enter the size of array ";
-    cin>>size;
-
-    auto ptr = new int[size];
-
-    cout<<"Insert the values in array"<<endl;
-
-    for (size_t i{0}; i < size; i++)
-        *(ptr+i) = 10 + i;
-
-    cout<<*(ptr + 4);
-
-    delete[] ptr;
-    ptr = nullptr;
+    display(scores, -1);
 
     return 0;
 }
