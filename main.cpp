@@ -26,14 +26,20 @@ void display(const vector<string> *v) {
 }
 
 
-int reused = 42;
+//int reused = 42;
 
 int main() {
-    auto reused = 10;
 
-    cout << reused << endl;
+    int iVal = 42;
+    const int &refVal = 2;
+    //refVal = 2;
+    cout<<refVal;
 
-    cout << ::reused << endl;
+    // auto reused = 10;
+    //
+    // cout << reused << endl;
+    //
+    // cout << ::reused << endl;
 
 
     return 0;
