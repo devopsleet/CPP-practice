@@ -26,8 +26,27 @@ void display(const vector<string> *v) {
 }
 
 int main() {
-    vector<string> stooges{"Larry", "Moe", "Curly"};
-    display(&stooges);
+
+    unsigned int x = -1;
+    cout<<x<<endl;
+    //
+    // unsigned n = 11;
+    //
+    // while ( n > 0) {
+    //     --n;
+    //     cout<<n<<endl;
+    // }
+
+    // unsigned int x = -2;  // Maximum value for a 32-bit signed int
+    // std::cout << "x before overflow: " << x << std::endl;
+    //
+    // x = x + 1;        // Overflow occurs here!
+    // std::cout << "x after overflow: " << x << std::endl;
+    //
+    // x = x - 2;        // Further arithmetic
+    // std::cout << "x after subtracting 2: " << x << std::endl;
+    // vector<string> stooges{"Larry", "Moe", "Curly"};
+    // display(&stooges);
 
     // const double *temp_ptr;
     //

@@ -13,18 +13,23 @@ void double_data(int *int_ptr) {
 }
 
 int main() {
-    int value{10};
-    int *int_ptr{nullptr};
 
-    cout << "Value before pointer " << value << endl;
-    double_data(&value);
-    cout << "Value after pointer " << value << endl;
+    extern const &var_list;
 
-    cout << "----------------------------------------" << endl;
-    int_ptr = &value;
 
-    double_data(int_ptr);
-    cout << "Value after pointer " << value << endl;
+
+    // int value{10};
+    // int *int_ptr{nullptr};
+    //
+    // cout << "Value before pointer " << value << endl;
+    // double_data(&value);
+    // cout << "Value after pointer " << value << endl;
+    //
+    // cout << "----------------------------------------" << endl;
+    // int_ptr = &value;
+    //
+    // double_data(int_ptr);
+    // cout << "Value after pointer " << value << endl;
 
 
     return 0;
