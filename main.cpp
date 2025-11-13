@@ -29,11 +29,15 @@ void display(const vector<string> *v) {
 //int reused = 42;
 
 int main() {
+    int i = 42;
 
-    int iVal = 42;
-    const int &refVal = 2;
-    //refVal = 2;
-    cout<<refVal;
+    int *p;
+
+    int *(&r) = p;
+
+    r = &i;
+
+    cout<<*r<<endl;
 
     // auto reused = 10;
     //
