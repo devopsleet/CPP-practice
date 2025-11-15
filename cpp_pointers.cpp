@@ -8,67 +8,44 @@
 
 using namespace std;
 
+int *create_array(size_t size, int init_val = 0) {
+    int *new_storage{nullptr};
+
+    new_storage = new int[size];
+
+    for (size_t i{0}; i < size; ++i) {
+        *(new_storage + i) = init_val;
+    }
+
+    return new_storage;
+}
+
+
+void display(int *arr, size_t size) {
+    for (size_t i{0}; i < size; i++) {
+        cout << *arr++ << " ";
+    }
+    cout << endl;
+}
+
 int main() {
-    int a = 10;
-    int b = 20;
+    int *myarr{nullptr};
 
-    int &ref = a;
+    size_t size{};
 
-    cout << a << endl;
-    cout << ref << endl;
+    int init_val;
 
-    ref = b;
+    cout << "What should be the size of your array";
+    cin >> size;
 
-    cout << a << endl;
-    cout << ref << endl;
-    cout << b << endl;
+    cout << "Would you like to initialize your array ";
+    cin >> init_val;
 
-    // const int *int_ptr{nullptr};
-    //
-    // int_ptr = new int;
-    //
-    // cout << int_ptr << endl;
-    //
-    // delete int_ptr;
-    //
-    // size_t size{0};
-    // const double *temp_ptr{nullptr};
-    //
-    // cout << "How many temps ?";
-    // cin >> size;
-    //
-    // temp_ptr = new double[size];
-    //
-    // cout << temp_ptr << endl;
-    //
-    // delete [] temp_ptr;
-    // temp_ptr = nullptr;
+    myarr = create_array(size, init_val);
 
+    display(myarr, size);
 
-    //int score{100};
-
-    // int *score_ptr{&score};
-    //
-    // cout << *score_ptr << endl;
-    //
-    // *score_ptr = 200;
-    //
-    // cout << score << endl;
-    //
-    //
-    // vector<string> stooges {"Larry", "Moe", "Curly"};
-    //
-    // vector<string> *vector_ptr {nullptr};
-    //
-    // cout<<stooges.at(0)<<endl;
-    //
-    // vector_ptr = &stooges;
-    //
-    // cout<<"vector elemet at 0 index "<<(*vector_ptr).at(0)<<endl;
-    //
-    // for (const auto &stooge : *vector_ptr) {
-    //     cout<<stooge<<endl;
-    // }
+    delete [] myarr;
 
 
     return 0;

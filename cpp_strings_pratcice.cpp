@@ -9,17 +9,18 @@
 using namespace std;
 
 int main() {
-    string s1 {"The secret word is Boo"};
+    string line;
 
-    string word;
+    while (getline(cin, line)) {
+        if (!line.empty())
 
-    cout<<"Enter the word";
-    cin>>word;
-
-    if (size_t pos = s1.find(word); pos != string::npos) {
-        cout<<"Word Found"<<endl;
-    } else {
-        cout<<"Not Found"<<endl;
+            cout << line << endl;
     }
+
+    // string s1, s2;
+    //
+    // cin>>s1>>s2;
+    // cout<<s1<<s2<<endl;
+
     return 0;
 }
