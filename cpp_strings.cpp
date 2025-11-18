@@ -10,13 +10,20 @@ using namespace std;
 
 int main() {
 
-    string s = "hell world";
+    string s {"some string"};
 
-    for (decltype(s.size()) index=0; index <s.size() && !isspace(s[index]); ++index) {
-        s[index] = toupper(s[index]);
-    }
+    for (auto it = s.begin(); it!= s.end() && !isspace(*it); ++it)
+        (*it) = toupper(*it);
 
     cout<<s<<endl;
+
+    // string s = "hell world";
+    //
+    // for (decltype(s.size()) index=0; index <s.size() && !isspace(s[index]); ++index) {
+    //     s[index] = toupper(s[index]);
+    // }
+    //
+    // cout<<s<<endl;
 
     // for (auto &c: s) {
     //     c = toupper(c);
