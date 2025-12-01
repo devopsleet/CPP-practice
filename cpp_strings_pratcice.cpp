@@ -9,18 +9,12 @@
 using namespace std;
 
 int main() {
-    string line;
 
-    while (getline(cin, line)) {
-        if (!line.empty())
+    string s;
 
-            cout << line << endl;
-    }
+    cin >> s;
 
-    // string s1, s2;
-    //
-    // cin>>s1>>s2;
-    // cout<<s1<<s2<<endl;
+    cout<< s;
 
     return 0;
 }

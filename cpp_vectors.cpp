@@ -8,45 +8,24 @@ using namespace std;
 
 int main() {
 
-    vector<int> v;
+    vector<int> v1 {1,20,3};
 
-    for (decltype(v.size()) x=0; x <10; ++x) {
-        v.push_back(x);
-    }
+    auto it = v1.begin();
 
-    cout<<v.size();
+    cout<<(++it);
+    //*it = 20;
 
-
-
-    // vector<unsigned int> clusters(11,0);
+    // vector<string> articles {"a", "an", "the"};
+    // vector <int> v1 {10};
+    // vector <int> v2 (5,10);
     //
-    // unsigned grade;
+    // string word;
     //
-    // while (cin>>grade) {
-    //     if (grade <=100) {
-    //         ++clusters[grade/10];
-    //     }
+    // vector<string> text;
+    //
+    // while (cin>>word) {
+    //     text.push_back(word);
     // }
-
-
-
-    // vector<int> v {1,2,3,4,5,6,7,8,9};
-    //
-    // for (auto &i:v) {
-    //     i *= i;
-    // }
-    //
-    // for (auto &i:v) {
-    //     cout<<v<<endl;
-    // }
-    // vector<int> v1;
-    //
-    // for (size_t i{0}; i < 100; ++i) {
-    //     v1.push_back(i);
-    // }
-    //
-    // cout << v1.at(99);
-
 
     return 0;
 }
