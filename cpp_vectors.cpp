@@ -7,18 +7,11 @@
 using namespace std;
 
 int main() {
-    vector<int> scores(11, 0);
+    string s{"some string"};
 
-    unsigned grade;
-
-    cout << "Enter the value of a grade between 1 to 100";
-    cin >> grade;
-
-    if (grade <= 100) {
-        ++scores[grade / 10];
+    for (auto it {s.begin()}; it != s.end() && !isspace(*it); ++it) {
+        (*it) = static_cast<char>(toupper(*it));
     }
 
-    cout << "The value in " << (grade/10) + 1 << " = " << scores[grade / 10];
-
-    return 0;
+    cout<<s<<endl;
 }
