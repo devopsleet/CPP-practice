@@ -7,25 +7,18 @@
 using namespace std;
 
 int main() {
+    vector<int> scores(11, 0);
 
-    vector<int> v1 {1,20,3};
+    unsigned grade;
 
-    auto it = v1.begin();
+    cout << "Enter the value of a grade between 1 to 100";
+    cin >> grade;
 
-    cout<<(++it);
-    //*it = 20;
+    if (grade <= 100) {
+        ++scores[grade / 10];
+    }
 
-    // vector<string> articles {"a", "an", "the"};
-    // vector <int> v1 {10};
-    // vector <int> v2 (5,10);
-    //
-    // string word;
-    //
-    // vector<string> text;
-    //
-    // while (cin>>word) {
-    //     text.push_back(word);
-    // }
+    cout << "The value in " << (grade/10) + 1 << " = " << scores[grade / 10];
 
     return 0;
 }

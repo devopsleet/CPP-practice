@@ -9,20 +9,10 @@
 using namespace std;
 
 int main() {
-    string s = "Hello! I am practicing C!!!";
 
-    decltype(s.size()) pnct_cnt = 0;
+    string s= "some strings are always in a lowercase";
 
-    for (auto c: s) {
-        if (ispunct(c)) {
-            pnct_cnt++;
-        }
-    }
-
-    cout << "In total there are " << pnct_cnt << " punctuation marks";
-
-    int character = char('c');
-    cout<<character<<endl;
+    for (decltype(s.size()) index {0}; )
 
 
     return 0;

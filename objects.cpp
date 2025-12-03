@@ -17,7 +17,9 @@ public:
 
     //methods
 
-    void talk(string);
+    void talk(string text) {
+        cout << name << " says" << text << endl;
+    }
 
     bool is_dead();
 };
@@ -42,6 +44,7 @@ int main() {
 
 
     Player frank{"Frank", 100, 12};
+    frank.talk("hi there");
     // frank.name {"Frank"};
     // frank.health {100};
     // frank.xp {12};
