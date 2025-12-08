@@ -13,5 +13,8 @@ int main() {
         (*it) = static_cast<char>(toupper(*it));
     }
 
+
+
+
     cout<<s<<endl;
 }

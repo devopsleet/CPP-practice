@@ -9,21 +9,15 @@
 
 using namespace std;
 
+
+template<typename T>
+T myMax(T a, T b) {
+    return (a > b) ? a : b;
+}
+
+
 int main() {
-    vector<int> v{12, 4343, 5, 6, 3, 54, 54};
-
-    reverse(v.begin(), v.end());
-
-    int sum {};
-
-    sum = accumulate(v.begin(), v.end(), 2);
-
-    cout<<sum<<endl;
-
-    for (auto &elem: v) {
-        cout << elem << endl;
-    }
-
+    cout << myMax<int>(3, 4) << endl;
 
     return 0;
 }
