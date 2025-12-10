@@ -11,35 +11,28 @@ using namespace std;
 
 
 int main() {
-    vector<char> v {'a', 'f', 'd'};
-    vector<string> v2;
+    vector<vector<int> > matrix{
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
 
-    v.push_back('e');
+    for (const auto &row: matrix) {
+        for (const auto &val: row) {
+            cout << val << " ";
+        }
 
-    v.insert(v.begin() + 1, 'c');
+        cout << endl;
+    }
 
-    // for (auto c: v) {
-    //     cout<<c<<endl;
-    // }
-    //
-    // cout<<v[4]<<endl;
-    cout<<v.size()<<endl;
-    v[7] = 'h';
-    // v2[0] = "hi";
-    // v2.push_back("gagan");
-    // cout<<v2.at(0)<<endl;
-    //v2.at(1) = "hello";
+    vector<vector<int>>grid(3, vector<int>(4,0));
 
-    //cout<<v[7]<<endl;
-
-
-    //cout<<v.at(7)<<endl;
-
-    cout<<v.size();
-
-    v.pop_back();
-
-    for (auto c: v) cout<<c<<endl;
-
+    for (const auto &r: grid) {
+        for (const auto &c: r) {
+            cout<<c<<" ";
+        }
+        cout<<endl;
+    }
+;
     return 0;
 }
