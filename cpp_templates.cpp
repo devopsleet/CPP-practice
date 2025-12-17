@@ -11,28 +11,45 @@ using namespace std;
 
 
 int main() {
-    vector<vector<int> > matrix{
-        {1, 2, 3},
-        {4, 5, 6},
-        {7, 8, 9}
-    };
 
-    for (const auto &row: matrix) {
-        for (const auto &val: row) {
-            cout << val << " ";
-        }
+    vector<int>v {1,2,1,2,3,4,3,4,3,3,43};
 
-        cout << endl;
+    sort(v.begin(), v.end());
+
+    // for (const auto &val: v) {
+    //     cout<<val<<endl;
+    // }
+
+    auto it = unique(v.begin(), v.end());
+
+    v.erase(it, v.end());
+
+    for (const auto &val: v) {
+        cout<<val<<endl;
     }
 
-    vector<vector<int>>grid(3, vector<int>(4,0));
-
-    for (const auto &r: grid) {
-        for (const auto &c: r) {
-            cout<<c<<" ";
-        }
-        cout<<endl;
-    }
-;
+//     vector<vector<int> > matrix{
+//         {1, 2, 3},
+//         {4, 5, 6},
+//         {7, 8, 9}
+//     };
+//
+//     for (const auto &row: matrix) {
+//         for (const auto &val: row) {
+//             cout << val << " ";
+//         }
+//
+//         cout << endl;
+//     }
+//
+//     vector<vector<int>>grid(3, vector<int>(4,0));
+//
+//     for (const auto &r: grid) {
+//         for (const auto &c: r) {
+//             cout<<c<<" ";
+//         }
+//         cout<<endl;
+//     }
+// ;
     return 0;
 }

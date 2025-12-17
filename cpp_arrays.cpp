@@ -8,9 +8,14 @@ using namespace std;
 
 int main() {
 
-    char arr[4] = {'C', '+', '+', '\0'};
 
-    cout<< sizeof(arr) / sizeof(arr[0]);
+    int A[5];
+
+
+
+    // char arr[4] = {'C', '+', '+', '\0'};
+    //
+    // cout<< sizeof(arr) / sizeof(arr[0]);
 
     // string nums[] {"one", "two", "three"};
     //
