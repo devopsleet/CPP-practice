@@ -1,0 +1,9 @@
+../.cache/
+../.codelite/
+../.ctagsd/
+../CPP-practice.workspace
+.clang-format
+.clangd
+CPP-practice.mk
+CPP-practice.project
+../build-Debug/
