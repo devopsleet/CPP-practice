@@ -13,11 +13,10 @@ int main() {
         break;
     }
     
-    for (auto &c: line)
-       c= toupper(c);
+    for(decltype(line.size()) index = 0; index < line.size() && !isspace(line[index]); index++)
+        line[index] = toupper(line[index]);
         
-    cout<<"String in Uppercase is "<<line<<endl;
-        
+    cout<<line<<endl;
         
     
     
