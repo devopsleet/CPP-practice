@@ -1,22 +1,23 @@
 #include <iostream>
-
+#include <string>
 using namespace std;
 
-int fact(int val) {
-    
-    int res = 1;
-    
-    while (val > 1)
-        res = res * val--;
-    
-    return res;
-}
+
 
 
 int main() {
+
+    string line;
     
-    int j = fact(5);
-    cout<<"5! is "<<j<<endl;
+    while(getline(cin,line)){
+        break;
+    }
+    
+    for (auto &c: line)
+       c= toupper(c);
+        
+    cout<<"String in Uppercase is "<<line<<endl;
+        
         
     
     
