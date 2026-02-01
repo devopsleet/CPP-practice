@@ -1,32 +1,27 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
 int main() {
     
-    int counter {10};
-    int result {0};
+    int total {};
     
-    cout<<"Counter "<<counter<<endl;
+    int num1{}, num2{},num3{};
     
-    ++counter;
-    counter++;
+    const int count {3};
     
-    cout<<counter<<endl;
+    cout<<"Enter 3 integers separated by spaces: ";
+    cin>> num1>>num2>>num3;
     
-    counter = 10;
-    result = 0;
+    total = num1 + num2 + num3;
     
-    result = ++counter;
-    cout<<counter<<endl;
-    cout<<result<<endl;
+    double average {0.0};
     
-    counter = 10;
-    result = 0;
+    average = static_cast<double>(total)/count;
     
-    result = counter++;
-    cout<<counter<<endl;
-    cout<<result<<endl;
+    cout<<"The 3 numbers were "<<num1<<" "<<num2<<" "<<num3<<endl;
+    cout<<"The sum of the numbers is "<<total<<endl;
+    cout<<"The average of the numbers is "<<average<<endl;
     
     return 0;
     
