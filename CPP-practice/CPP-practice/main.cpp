@@ -4,20 +4,13 @@ using namespace std;
 
 int main() {
     
-    int num{};
+    double a = 100;
     
-    const int lower {10};
-    const int upper {20};
+    int b = 12;
     
-    cout<<boolalpha;
+    int x = a/b;
     
-    cout<<"Enter the integer";
-    cin>>num;
-    
-    bool within_bounds {false};
-    
-    within_bounds = (num > lower && num < upper);
-    cout<<within_bounds;
+    cout<<x;
     
     
     
