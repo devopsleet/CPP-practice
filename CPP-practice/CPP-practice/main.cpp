@@ -4,18 +4,30 @@ using namespace std;
 
 int main() {
     
-    const double usd_per_eur {1.19};
+    int counter {10};
+    int result {0};
     
-    cout<<"Welcome to the EUR to USD conveter"<<endl;
-    cout<<"Enter the value in EUR = ";
+    cout<<"Counter "<<counter<<endl;
     
-    double euros {0.0};
-    double dollars {0.0};
+    ++counter;
+    counter++;
     
-    cin>>euros;
-    dollars = euros * usd_per_eur;
+    cout<<counter<<endl;
     
-    cout<<euros<<"  euros is equivalent to " <<dollars<<endl;
+    counter = 10;
+    result = 0;
+    
+    result = ++counter;
+    cout<<counter<<endl;
+    cout<<result<<endl;
+    
+    counter = 10;
+    result = 0;
+    
+    result = counter++;
+    cout<<counter<<endl;
+    cout<<result<<endl;
+    
     return 0;
     
 }
