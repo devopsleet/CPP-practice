@@ -4,27 +4,21 @@ using namespace std;
 
 int main() {
     
-    bool equal_result {false};
-    bool not_equal_result {false};
+    int num{};
     
-    
-    int num1{}, num2{};
-    
-    cout<<"Enter two integers separated by space = ";
-    cin>>num1>>num2;
-    
-    equal_result = (num1 == num2);
+    const int lower {10};
+    const int upper {20};
     
     cout<<boolalpha;
-    cout<<equal_result;
     
-    char char1{}, char2{};
+    cout<<"Enter the integer";
+    cin>>num;
     
-    cout<<"Enter two characters";
-    cin>>char1>>char2;
+    bool within_bounds {false};
     
-    equal_result = (char1 == char2);
-    cout<<equal_result;
+    within_bounds = (num > lower && num < upper);
+    cout<<within_bounds;
+    
     
     
     
