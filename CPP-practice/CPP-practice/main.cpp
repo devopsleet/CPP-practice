@@ -4,24 +4,29 @@ using namespace std;
 
 int main() {
     
-    int total {};
+    bool equal_result {false};
+    bool not_equal_result {false};
     
-    int num1{}, num2{},num3{};
     
-    const int count {3};
+    int num1{}, num2{};
     
-    cout<<"Enter 3 integers separated by spaces: ";
-    cin>> num1>>num2>>num3;
+    cout<<"Enter two integers separated by space = ";
+    cin>>num1>>num2;
     
-    total = num1 + num2 + num3;
+    equal_result = (num1 == num2);
     
-    double average {0.0};
+    cout<<boolalpha;
+    cout<<equal_result;
     
-    average = static_cast<double>(total)/count;
+    char char1{}, char2{};
     
-    cout<<"The 3 numbers were "<<num1<<" "<<num2<<" "<<num3<<endl;
-    cout<<"The sum of the numbers is "<<total<<endl;
-    cout<<"The average of the numbers is "<<average<<endl;
+    cout<<"Enter two characters";
+    cin>>char1>>char2;
+    
+    equal_result = (char1 == char2);
+    cout<<equal_result;
+    
+    
     
     return 0;
     
