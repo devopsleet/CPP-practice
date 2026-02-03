@@ -1,35 +1,35 @@
+// Conditonal Operator
 #include <iostream>
 
 using namespace std;
 
 int main() {
     
+//    int num {};
+//    
+//    cout<<"Enter an integer";
+//    cin>>num;
+//    
+//    cout<<((num%2==0)?"Even":"odd");
     
-    enum Direction {
-        left, right, up, down
-    };
+
     
-    Direction heading {down};
+    int num1{}, num2{};
     
-    switch(heading) {
-        case left:
-            cout<<"Going left"<<endl;
-            break;
-        case 1:
-            cout<<"Right";
-            break;
-        case 2:
-            cout<<"Up"<<endl;
-            break;
-        case 3:
-            cout<<"Down"<<endl;
-            break;
-        
+    cout<<"Enter two integers ";
+    cin>>num1>>num2;
+    
+    if (num1 != num2) {
+        cout<<"Largest "<<((num1>num2)? num1: num2)<<endl;
+        cout<<"Smallest "<<((num1 < num2)? num1: num2);
     }
+    else
+        cout<<"Both the numbers are same";
+    
+     return 0;
     
     
     
     
-    return 0;
     
 }
