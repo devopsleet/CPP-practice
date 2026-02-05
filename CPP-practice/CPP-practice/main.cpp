@@ -1,6 +1,7 @@
 // Conditonal Operator
 #include <iostream>
-
+#include <vector>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -11,21 +12,39 @@ int main() {
 //    cin>>num;
 //    
 //    cout<<((num%2==0)?"Even":"odd");
-    
 
+    int scores [] {10,20,30};
     
-    int num1{}, num2{};
-    
-    cout<<"Enter two integers ";
-    cin>>num1>>num2;
-    
-    if (num1 != num2) {
-        cout<<"Largest "<<((num1>num2)? num1: num2)<<endl;
-        cout<<"Smallest "<<((num1 < num2)? num1: num2);
+    for(auto score: scores){
+        cout<<score<<endl;
     }
-    else
-        cout<<"Both the numbers are same";
     
+    vector<double> temperatures {45.67,34.768};
+    
+    double avg_temp {};
+    double total {};
+    
+    for(auto temp: temperatures)
+        total += temp;
+        
+    if(temperatures.size()) {
+        avg_temp = total/temperatures.size();
+    }
+    
+    cout<<fixed<<setprecision(1);
+    
+    cout<<avg_temp<<endl;
+    
+    for (auto val: {1,2,3,4,5})
+    {
+        cout<<val;
+        
+    }
+    
+    for (auto c: "This is a test") {
+        cout<<c;
+    }
+
      return 0;
     
     
