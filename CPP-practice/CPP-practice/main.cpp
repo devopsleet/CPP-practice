@@ -2,51 +2,30 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
+#include <cctype>
+#include <cstring>
 using namespace std;
 
 int main() {
     
-//    int num {};
-//    
-//    cout<<"Enter an integer";
-//    cin>>num;
-//    
-//    cout<<((num%2==0)?"Even":"odd");
-
-    int scores [] {10,20,30};
+    char first_name[20] {};
+    char last_name[20] {};
+    char full_name[50] {};
+    char temp[50] {};
     
-    for(auto score: scores){
-        cout<<score<<endl;
-    }
     
-    vector<double> temperatures {45.67,34.768};
+    //cout<<first_name<<endl;
+    cout<<"Enter your first name ";
+    cin>>first_name;
     
-    double avg_temp {};
-    double total {};
     
-    for(auto temp: temperatures)
-        total += temp;
-        
-    if(temperatures.size()) {
-        avg_temp = total/temperatures.size();
-    }
+    cout<<"Enter your last name ";
+    cin>>last_name;
     
-    cout<<fixed<<setprecision(1);
+    cout<<"--------------------"<<endl;
     
-    cout<<avg_temp<<endl;
-    
-    for (auto val: {1,2,3,4,5})
-    {
-        cout<<val;
-        
-    }
-    
-    for (auto c: "This is a test") {
-        cout<<c;
-    }
-
-     return 0;
-    
+    cout<<"Hello, "<<first_name<<" has " <<strlen(first_name) <<"  characters "<<endl;
+    cout<<" and your last name has " <<strlen(last_name)<<" characters "<<endl;
     
     
     
